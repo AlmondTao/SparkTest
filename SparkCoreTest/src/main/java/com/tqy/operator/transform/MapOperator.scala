@@ -12,7 +12,15 @@ object MapOperator {
       List(1, 2, 3, 4, 5)
     )
 
-    val rdd2:RDD[Int] = rdd.map(_ * 2)
+    val rdd2: RDD[Any] = rdd.map(
+      data => {
+        if (data == 1) {
+          null
+        } else {
+          data * 2
+        }
+      }
+    )
 
     val rdd3:RDD[String] = rdd2.map(num => num + "")
 
