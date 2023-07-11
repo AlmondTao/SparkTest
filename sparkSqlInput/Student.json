@@ -1,0 +1,1 @@
+{"studentName": "zhangsan","studentAge": 18, "teacher": {"teacherName": "语文老师","teacherAge": 30},"courseList": [{"courseName": "语文","courseScore": 90},{"courseName": "数学","courseScore": 95}]}
